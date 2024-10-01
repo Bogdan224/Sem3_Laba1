@@ -1,6 +1,6 @@
 ﻿namespace Sem3_Alaba1
 {
-    internal class PersonalComputer : ComputerDevice
+    public class PersonalComputer : ComputerDevice
     {
         private int ram;
         public int Ram
@@ -11,7 +11,7 @@
             }
             set
             {
-                if (value < 0) value = 0;
+                if (value < 0) throw new ArgumentException("Wrong argument!"); ;
                 ram = value;
             }
         }
@@ -24,7 +24,7 @@
             }
             set
             {
-                if(value < 0) value = 0;
+                if(value < 0) throw new ArgumentException("Wrong argument!"); ;
                 storage = value;
             }
         }
@@ -43,9 +43,9 @@
             Storage = storage;
         }
 
-        public override string printInfo() 
+        public override string Info() 
         {
-            return base.printInfo() + $"Ram: {Ram} GB\n" +
+            return base.Info() + $"Ram: {Ram} GB\n" +
                 $"Storage: {Storage} GB\n";
         }
 

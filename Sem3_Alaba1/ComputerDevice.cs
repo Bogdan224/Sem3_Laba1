@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sem3_Alaba1
 {
-    internal class ComputerDevice
+    public class ComputerDevice
     {
 
         public string Brand {  get; set; }
@@ -21,7 +21,7 @@ namespace Sem3_Alaba1
             }
             set
             {
-                if(value < 2000) value = 2000;
+                if(value < 1900) throw new ArgumentException("Wrong argument!");
                 year = value;
             }
         }
@@ -33,7 +33,7 @@ namespace Sem3_Alaba1
             }
             set
             {
-                if(price < 0) value = 0;
+                if(value < 0) throw new ArgumentException("Wrong argument!");
                 price = value;
             }
         }
@@ -47,7 +47,7 @@ namespace Sem3_Alaba1
             Price = price;
         }
 
-        public virtual string printInfo()
+        public virtual string Info()
         {
             return $"Brand: {Brand}\n" +
                 $"Model: {Model}\n" +

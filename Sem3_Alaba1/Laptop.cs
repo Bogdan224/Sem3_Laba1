@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sem3_Alaba1
 {
-    internal class Laptop : ComputerDevice {
+    public class Laptop : ComputerDevice {
         private double screenSize;
         public double ScreenSize
         {
@@ -16,7 +16,7 @@ namespace Sem3_Alaba1
             }
             set
             {
-                if(value < 0) value = 0;
+                if(value < 0) throw new ArgumentException("Wrong argument!");
                 screenSize = value;
             }
         }
@@ -29,7 +29,7 @@ namespace Sem3_Alaba1
             }
             set
             {
-                if(value < 0) value= 0;
+                if(value < 0) throw new ArgumentException("Wrong argument!");
                 weight = value;
             }
         }
@@ -48,9 +48,9 @@ namespace Sem3_Alaba1
             Weight = weight;
         }
 
-        public override string printInfo()
+        public override string Info()
         {
-            return base.printInfo() + $"Screen Size: {ScreenSize} inches\n" +
+            return base.Info() + $"Screen Size: {ScreenSize} inches\n" +
                 $"Weight: {Weight} kg\n";
         }
     }

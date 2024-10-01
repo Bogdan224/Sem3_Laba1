@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sem3_Alaba1", "Sem3_Alaba1\Sem3_Alaba1.csproj", "{C291C1ED-BBE7-4A38-A4CE-40BF162B6668}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sem3_Alaba1.Tests", "Sem3_Alaba1.Tests\Sem3_Alaba1.Tests.csproj", "{48B7B479-199F-44F5-83DE-DA4313F6B209}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C291C1ED-BBE7-4A38-A4CE-40BF162B6668}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C291C1ED-BBE7-4A38-A4CE-40BF162B6668}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C291C1ED-BBE7-4A38-A4CE-40BF162B6668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48B7B479-199F-44F5-83DE-DA4313F6B209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48B7B479-199F-44F5-83DE-DA4313F6B209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48B7B479-199F-44F5-83DE-DA4313F6B209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48B7B479-199F-44F5-83DE-DA4313F6B209}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
