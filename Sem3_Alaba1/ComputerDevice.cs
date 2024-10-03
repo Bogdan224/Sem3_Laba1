@@ -21,7 +21,7 @@ namespace Sem3_Alaba1
             }
             set
             {
-                if(value < 1900) throw new ArgumentException("Wrong argument!");
+                if(value < 1950) throw new ArgumentException("Wrong argument!");
                 year = value;
             }
         }

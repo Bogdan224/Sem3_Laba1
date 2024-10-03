@@ -14,14 +14,9 @@ namespace Sem3_Alaba1.Tests
         [DataRow("Undefined", "Undefined", 2000, 1500, 8, 512)]
         public void Laptop_ShouldCreating(string brand, string model, int year, double price, int ram, int storage)
         {
-            try
-            {
-                Assert.IsNotNull(new PersonalComputer(brand, model, year, price, ram, storage));
-            }
-            catch
-            {
-                Assert.Fail();
-            }
+
+            Assert.IsNotNull(new PersonalComputer(brand, model, year, price, ram, storage));
+
         }
 
         [TestMethod]
@@ -30,16 +25,7 @@ namespace Sem3_Alaba1.Tests
         [DataRow("Undefined", "Undefined", 2000, 1500, -8, -512)]
         public void Laptop_NotShouldCreating(string brand, string model, int year, double price, int ram, int storage)
         {
-            PersonalComputer pc = null;
-            try
-            {
-                pc = new PersonalComputer(brand, model, year, price, ram, storage);
-            }
-            catch
-            {
-
-            }
-            Assert.IsNull(pc);
+            Assert.ThrowsException<ArgumentException>(()=> new PersonalComputer(brand, model, year, price, ram, storage));
         }
     }
 }
