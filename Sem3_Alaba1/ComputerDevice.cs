@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sem3_Alaba1
+﻿namespace Sem3_Alaba1
 {
     public class ComputerDevice
     {
